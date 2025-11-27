@@ -33,12 +33,11 @@
 *.gif  binary
 *.webp binary
 *.ico  binary
-*.svg  binary  # treated as binary to avoid noisy XML diffs (optional)
-
+*.svg  binary
 # 3D / DCC assets
 *.fbx   binary
 *.blend binary
-*.obj   text  # OBJ is text; I can flip this to binary if I prefer
+*.obj   text
 *.mtl   text
 *.abc   binary
 *.hip   binary
