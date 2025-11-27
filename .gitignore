@@ -1,0 +1,87 @@
+# ============================
+# Node / JavaScript projects
+# ============================
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Build output (for when you add bundlers later: Vite, Webpack, Next, etc.)
+dist/
+build/
+.out/
+.next/
+.vite/
+.cache/
+coverage/
+
+# Lockfiles are usually committed, so we do NOT ignore:
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ============================
+# Logs and temp files
+# ============================
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+*.log
+*.tmp
+*.swp
+*.swo
+
+# ============================
+# OS / Editor cruft
+# ============================
+
+# macOS
+.DS_Store
+.AppleDouble
+.Icon?
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# VSCode and JetBrains IDEs
+.vscode/
+.idea/
+*.iml
+
+# Other editor backups
+*~
+*.bak
+
+# ============================
+# Design / DCC tools (Blender, Houdini, etc.)
+# ============================
+
+# Blender backup files
+*.blend1
+*.blend2
+*.blend@
+*.blend?
+
+# Houdini backup files
+*.hip~
+*.hiplc~
+*.hipnc~
+
+# Generic cache/temp folders we might create for sims/exports
+cache/
+temp/
+_tmp/
+exports/
+
+# ============================
+# Misc
+# ============================
+
+# If we ever generate static site output into docs/
+# (e.g. MkDocs, Docusaurus), we can add it here later, e.g.:
+# docs/build/
