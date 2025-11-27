@@ -1,6 +1,6 @@
 # Repository Structure and Conventions
 
-This document expands on the folder structure and naming conventions used in WebExperiments.
+This document expands on the folder structure and per-language naming conventions used in WebExperiments.
 
 ---
 
@@ -8,34 +8,66 @@ This document expands on the folder structure and naming conventions used in Web
 
 Root layout:
 
-```
-WebExperiments/
-  README.md
-  docs/
-  experiments/
-  resources/
-  raw-assets/
-  .gitignore
-  .gitattributes
-```
+WebExperiments/  
+  README.md  
+  docs/  
+  experiments/  
+  resources/  
+  raw-assets/  
+  .gitignore  
+  .gitattributes  
+
+### experiments/
+
+Each experiment is isolated in its own folder:
+
+experiments/  
+  threejs-playground/  
+  flutter-test-app/  
+  ui-prototype-01/  
+
+This keeps unrelated prototypes separated and maintainable.
 
 ---
 
 ## Naming Conventions
 
-Use **kebab-case** for folders and files:
+### Folder & asset names
 
-```
-threejs-playground
-ui-prototype-01
-webgl-tests
+All folders and non-code files use **kebab-case**:
+
+threejs-playground  
+ui-prototype-01  
+webgl-tests  
 raw-assets
-```
 
-JavaScript naming:
+Kebab-case is cross-platform-safe and highly readable.
 
-- camelCase — variables and functions  
+---
+
+## Per-language Code Conventions
+
+Different languages follow their **official style guides**.  
+This prevents confusion and ensures idiomatic code in each ecosystem.
+
+### JavaScript / HTML / CSS
+- camelCase — variables & functions  
 - PascalCase — classes  
-- SCREAMING_SNAKE_CASE — constants  
+- camelCase or SCREAMING_SNAKE_CASE — constants  
+- kebab-case — CSS class names  
+- lowercase — HTML tags  
 
-This style is consistent, easy to read, and works across all platforms.
+### Dart / Flutter
+- PascalCase — classes, enums, typedefs  
+- lowerCamelCase — variables, fields, methods, constants  
+- snake_case — Dart filenames and directories in `lib/`  
+- PascalCase — widget class names  
+
+---
+
+## Summary
+
+- Repo-wide structural naming uses **kebab-case**  
+- JavaScript/HTML/CSS follow modern web naming conventions  
+- Dart/Flutter follow official Dart style guidelines  
+- Each experiment remains idiomatic to its language by design
