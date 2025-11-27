@@ -8,7 +8,7 @@ Experiments live in separate folders under `experiments/` so each prototype can 
 ---
 
 ## Repository Structure
-
+```
 WebExperiments/  
   README.md  
   .gitignore  
@@ -21,7 +21,7 @@ WebExperiments/
     threejs-playground/  
     flutter-test-app/  
     ...other experiments...
-
+```
 ---
 
 ## Naming Conventions
@@ -29,27 +29,27 @@ WebExperiments/
 ### Folder & file names (repository-wide)
 
 This repository uses **kebab-case** for all directories and non-code filenames:
-
+```
 threejs-playground  
 ui-prototype-01  
 texture-tests  
 raw-assets
-
+```
 This is platform-safe, URL-safe, and visually consistent.
 
 ---
 
 ### Per-language code conventions  
-Each language follows its official style guide. 
+- Follow the style guide for each specific language/tool. Examples:
 
-#### JavaScript / HTML / CSS
+JavaScript / HTML / CSS:
 - camelCase — variables and functions  
 - PascalCase — classes  
 - camelCase or SCREAMING_SNAKE_CASE — constants  
 - kebab-case — CSS class names  
 - lowercase — HTML tags  
 
-#### Dart / Flutter
+Dart / Flutter:
 - PascalCase — classes, enums, typedefs  
 - lowerCamelCase — variables, fields, methods, constants  
 - snake_case — Dart filenames and `lib/` directories  
